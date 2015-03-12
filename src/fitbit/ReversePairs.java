@@ -4,6 +4,7 @@ public class ReversePairs {
 	
 	
 	public static String reversePairs(String text) {
+		if(text == null || text.length() % 2 != 0) throw new IllegalArgumentException("Invalid argument");
 		int sindex = text.length();
 		String ntext = new String();
 		
